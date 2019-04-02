@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<!-- Controles para filtrar los datos por fecha -->
+<label for="from">From:</label>
+<input id="from" type="date" />
+<label for="to">To:</label>
+<input id="to" type="date" />
+
+<!-- Selector de divisa que se usará para los precios -->
+<label for="currency">Currency:</label>
+<select id="currency">
+  <option value="USD">USD</option>
+  <option value="EUR">EUR</option>
+</select>
+
+<!-- Caja informativa donde mostraremos el máximo y mínimo -->
+<p>Max: <span id="max"></span> | Min: <span id="min"></span></p>
+
+<!-- Lienzo donde Chart.js dibujará la línea de precios -->
+<canvas id="myChart" width="400" height="200"></canvas>
